@@ -7,13 +7,19 @@
 
     //ENTRADA
     let listaDeNomes = ["João Pedro", "Gabriel José", "Ulisses Joao", "Pedro Henrique", "João da Silva", "João Henrique", "Alisson João"];
+    let Joao = [];
+    let NJoao = [];
 
     //PROCESSAMENTO
-        for(let item of listaDeNomes){
-            if(item){
-                
-            }
+    for (let item of listaDeNomes) {
+        if (item.indexOf("Joao") != -1 || item.indexOf("João") != -1) {
+            Joao.push(item);
         }
+        else {
+            NJoao.push(item);
+        }
+    }
     //SAÍDA
+    alert(`Nomes: ${Joao.join(", ")}.`)
 
 </script>

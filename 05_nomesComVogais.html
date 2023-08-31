@@ -7,13 +7,16 @@
 
     //ENTRADA
     let listaDeNomes = ["Amanda", "Eduardo", "Fábio", "Evelin", "César", "José", "Ivo", "Eva", "Otávio", "Inez", "Osmar", "Ulisses"];
+    let nome = []
 
     //PROCESSAMENTO
-    for(let item of listaDeNomes){
-        if(item.in){
+    for (let item of listaDeNomes) {
+        if (item.charAt(0) === "A" || item.charAt(0) === "E" || item.charAt(0) === "I" || item.charAt(0) === "O" || item.charAt(0) === "U") {
+            nome.push(item)
         }
     }
 
     //SAÍDA
+    alert(`Os nomes são: ${nome.sort().join(", ")}`)
 
 </script>

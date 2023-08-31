@@ -7,14 +7,18 @@
 
     //ENTRADA
     let listaDeNomes = ["João", "Maria", "José", "Amanda", "Beatriz", "Júlio", "Olívia"];
-    const gender = prompt("Seu genêro é M-Masculino||F-Feminino").toUpperCase().trim();
+    let fem = []
+    let masc = []
 
     //PROCESSAMENTO
-    let fem = ["Maria", "Amanda", "Beatriz", "Olívia"]
-    let masc = ["João", "Maria", "José", "Amanda", "Beatriz", "Júlio"]
+    
     for(let item  of listaDeNomes){
+        const gender = prompt(`O nome ${item} é F-Feminino ou M-Masculino`).toUpperCase().trim();
         if(gender =="M"){
-            
+            masc.push(item);
+        }
+        else if(gender == "F"){
+            fem.push(item)
         }
     }
 

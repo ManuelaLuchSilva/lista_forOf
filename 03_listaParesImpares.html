@@ -7,10 +7,20 @@
 
     //ENTRADA
     let listaDeNumeros = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+    let numPares = []
+    let numImpar = []
 
     //PROCESSAMENTO
-    
+    for(let item of listaDeNumeros){
+        if(item%2==0){
+            numPares.push(item);
+        }
+        else{
+            numImpar.push(item);
+        }
+    }
 
     //SAÍDA
+    alert(`Números pares: ${numPares.join(", ")}\nNúmeros impares: ${numImpar.join(", ")}`)
 
 </script>

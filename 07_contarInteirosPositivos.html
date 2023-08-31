@@ -7,10 +7,18 @@
 
     //ENTRADA
     let listaDeNumeros = [1, 2.5, -3, 4, 8.9, 4.789, -25.6, 42];
+    let num = []
 
     //PROCESSAMENTO
-
+    for(let item of listaDeNumeros){
+        if(!isNaN(item)){
+            if(item>=0 && item%1==0){
+                num.push(item);
+            }
+        }
+    }
 
     //SAÍDA
+    alert(`Os números inteiros e positivos: ${num.join(", ")};\nSe tem ${num.length} números localizados`)
 
 </script>

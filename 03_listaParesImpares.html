@@ -21,6 +21,6 @@
     }
 
     //SAÍDA
-    alert(`Números pares: ${numPares.join(", ")}\nNúmeros impares: ${numImpar.join(", ")}`)
+    alert(`Números pares em ordem crescente: ${numPares.sort((a, b) => (a-b)).join(", ")}\nNúmeros pares em ordem decrescente: ${numPares.sort((a, b) => (b-a)).join(", ")}\n\nNúmeros impares em ordem crescente: ${numImpar.sort((a, b) => (a-b)).join(", ")}Números impares em ordem decrescente: ${numPares.sort((a, b) => (a-b)).join(", ")}`)
 
 </script>
